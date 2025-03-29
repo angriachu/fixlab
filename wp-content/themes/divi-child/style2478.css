@@ -1,0 +1,95 @@
+/*-------------------------------------------------------
+Theme Name: Divi Child Theme
+Description: A child theme template for Divi
+Template: Divi
+Version: 1.0.0
+----------------- ADDITIONAL CSS HERE ------------------*/
+
+/* Gravity Form CSS */
+/* validation css */
+.validation_error, .instruction.validation_message {display:none;}
+.gfield_description.validation_message {padding:0 !important;color:#c1272a !important;}
+.gform_wrapper li.gfield.gfield_error{background:none !important;border:none !important;padding-top:0px !important;}
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label{margin-top:0px !important;}
+.gfield_error input{border:1px solid #c1272a !important;}
+
+/* common css */
+.gform_wrapper{margin-bottom:0px !important;}
+ body .gform_wrapper ul li.gfield,input{margin-top:0px !important}
+.gform_wrapper .gform_footer{padding-top:0px !important;margin-top:0px !important}
+.gform_wrapper .field_sublabel_hidden_label .ginput_complex.ginput_container input[type="text"]{margin-bottom:0px !important}
+.gform_wrapper textarea{height:120px !important}
+.gform_wrapper li{margin-bottom:15px !important} 
+.has_first_name label{display:none !important}
+.gform_wrapper input,.gform_wrapper textarea,.gform_wrapper select{padding:15px !important;}
+input[type="submit"]{padding:14px 30px !important;border:none !important;cursor:pointer;transition:ease-in-out 0.2s;letter-spacing: 2px;font-size: 16px;font-weight: 700 !important;border-radius:0px;}
+.datepicker{width: 100% !important;}
+.gform_wrapper select{-webkit-appearance: none;-moz-appearance: none;-o-appearance: none;}
+.ginput_container_select{position: relative;}
+.ginput_container_select::before{content: '\f107';font-family: FontAwesome;position: absolute;color: #000;right: 25px;top: 50%;-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);transform: translateY(-50%);font-size: 20px;}
+
+/* newsletter css */
+.gf-style-one ::placeholder{color:#fff;opacity:1 !important;}
+/*.gf-style-one .gform_body.gform-body{padding-right: 140px;}*/
+.gf-style-one input,.gf-style-ne select,.gf-style-ne textarea{color:#fff;background:transparent;border:none;border-bottom:1px solid  #fff !important;}
+.gf-style-one input[type="submit"]{color:#000;background:#fff;position:absolute;right:0px;top:0px;border-radius: 8px 8px 0px 0px;}
+
+/* end newsletter css */
+
+/* style css */
+.gf-style-two ::placeholder{color:#777777;opacity:1 !important;}
+.gf-style-two input,.gf-style-two select,.gf-style-two textarea{background:#F4F4F4;color:#000;border:none!important;}
+.gf-style-two input[type="submit"]{color:#fff;background:#3A8AC7;border:1px solid #3A8AC7 !important;margin-top:15px !important;Padding:15px 30px;margin:auto;letter-spacing:0px;}
+.gf-style-two input[type="submit"]:hover{background:#fff;color:#3A8AC7;transition:ease-in-out 0.2s;}
+
+
+/*Tab & Mobile menu collapse 
+#et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before,
+.et_pb_module.et_pb_menu .et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before {content: 'd';}*/
+
+/*adjust the new toggle element which is added via jQuery*/
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
+ul.et_mobile_menu li.page_item_has_children .mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.page_item_has_children .mobile-toggle {width: 44px;height: 100%;padding: 0px !important;max-height: 44px;border: none;position: absolute;right: 0px;top: 0px;z-index: 999;background-color: transparent;}
+/*some code to keep everything positioned properly*/
+ul.et_mobile_menu>li.menu-item-has-children,
+ul.et_mobile_menu>li.page_item_has_children,
+ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.page_item_has_children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children {position: relative;}
+/*remove default background color from menu items that have children*/
+.et_mobile_menu .menu-item-has-children>a,
+.et-db #et-boc .et-l .et_mobile_menu .menu-item-has-children>a{background-color: transparent;}
+/*hide the submenu by default*/
+ul.et_mobile_menu .menu-item-has-children .sub-menu,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu {display: none !important;visibility: hidden !important;}
+/*show the submenu when toggled open*/
+ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible {display: block !important;visibility: visible !important;}
+/*adjust the toggle icon position and transparency*/
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle {text-align: center;opacity: 1;}
+/*submenu toggle icon when closed*/
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after {top: 10px;position: relative;font-family: "ETModules";content: '';color: #00d263;background: #f0f3f6;border-radius: 50%;padding: 3px;}
+/*submenu toggle icon when open*/
+ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after {content: '';}
+/*add point on top of the menu submenu dropdown*/
+.et_pb_menu_0.et_pb_menu .et_mobile_menu:after {position: absolute;right: 5%;margin-left: -20px;top: -14px;width: 0;height: 0;content: '';border-left: 20px solid transparent;border-right: 20px solid transparent;border-bottom: 20px solid #ffffff;}
+/*adjust the position of the hamburger menu*/
+.mobile_menu_bar {position: relative;display: block;bottom: 10px;line-height: 0;}
+/*force the background color and add a rounded border*/
+.et_pb_menu_0.et_pb_menu .et_mobile_menu,
+.et_pb_menu_0.et_pb_menu .et_mobile_menu ul {background-color: #ffffff!important;border-radius: 10px;}
+.et_pb_menu__wrap .mobile_menu_bar:before {top: 8px !important;}
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after, .et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after{content: '\33' !important;color: #000!important;background: #f0f3f600 !important;}
+@media only screen and (max-width: 980px){
+.et_pb_menu_1_tb_header.et_pb_menu ul#mobile_menu2 li.current-menu-item a {
+    color: #8b2130!important;}}
